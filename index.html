@@ -3,10 +3,32 @@
         <title>Sidebar Settings</title>
         <link rel="stylesheet" href="./style/reset.css">
         <link rel="stylesheet" href="./style/main.css">
+        <script type="text/javascript" src="./scripts/settings.js"></script>
     </head>
     <body>
         <div class="container">
+            <div class="content">
+                <header>
+                    <nav class="nav">
+                        <a class="nav__link nav__logo" href="#">L</a>
+                        <input class="nav__search nav__txt" type="textbox" id="search" placeholder="Search..."/>
+                        <a class="nav__link" href="#">Link 2</a>
+                        <a class="nav__link" href="#">Link 3</a>
+                        <a class="nav__link" href="#">Link 4</a>
+                        <a class="nav__link" href="#">Link 5</a>
+                        <span class="nav__buffer"></span>
+                        <input class="nav__settings nav__btn" type="button" id="sidebar_show" value="G"/>
+                    </nav>
+                </header><!--header-->
+            </div><!--content-->
+            <section id="sidebar" class="sidebar">
+                <div class="sidebar__summary">
+                    <input id="sidebar_hide" type="button" value="=>"/>
+                </div><!--sidebar__summary-->
+                <div class="sidebar__main">
 
+                </div><!--sidebar__main-->
+            </section><!--sidebar-->
         </div><!--container-->
     </body>
 </html>

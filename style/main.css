@@ -1,3 +1,31 @@
 body {
     background-color: #333;
+    overflow-x: hidden;
+}
+.container {
+    display: flex;
+}
+.content {
+    flex: 1;
+}
+.sidebar {
+    background-color: rgba(0,0,0,.95);
+    height: 100%;
+    width: 40vw;
+    min-width: 200px;
+    max-width: 400px;
+    position: absolute;
+    right: -10000;
+    transition: right .22s ease-in-out;
+}
+.nav {
+    display: flex;
+}
+.nav__buffer {
+    flex: 1;
+}
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
 }
