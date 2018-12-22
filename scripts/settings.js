@@ -16,5 +16,5 @@ function show_sidebar() {
 
 function startListeners() {
     document.getElementById("sidebar_show").addEventListener("click",show_sidebar);
-    document.getElementById("sidebar_hide").addEventListener("click",hide_sidebar);
+    document.getElementById("main").addEventListener("click",hide_sidebar);
 }

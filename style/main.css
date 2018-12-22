@@ -16,7 +16,7 @@ body {
     max-width: 400px;
     position: absolute;
     right: -10000;
-    transition: right .22s ease-in-out;
+    transition: right .44s ease-in-out;
 }
 .nav {
     display: flex;
@@ -28,4 +28,21 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 2rem;
+}
+.sidebar__summary {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+}
+.sidebar__summary > .summary__item:first-of-type {
+    justify-self: flex-start;
+}
+.sidebar__summary > .summary__item {
+    margin: 10px 0;
+}
+#main {
+    width: 100%;
+    height: 100%;
 }
