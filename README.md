@@ -1,2 +1,3 @@
 # sidebar-settings
-uiux html css js
+uiux html css javascript
+
