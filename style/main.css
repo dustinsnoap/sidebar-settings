@@ -80,8 +80,24 @@ body {
     justify-self: flex-start;
 }
 .sidebar__summary > .summary__item {
-    margin: 10px 0;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0;
+    height: 24px;
+    width: 24px;
 }
+.sidebar__summary > .summary__item:hover {
+    background-color: #888;
+}
+.sidebar__summary > .summary__item#settings__account {background-image: url("../img/account.png");}
+.sidebar__summary > .summary__item#settings__colors {background-image: url("../img/color.png");}
+.sidebar__summary > .summary__item#settings__sound {background-image: url("../img/sound.png");}
+.sidebar__summary > .summary__item#settings__input {background-image: url("../img/keys.png");}
+.sidebar__summary > .summary__item#settings__logout {background-image: url("../img/logout.png");}
 #main {
     width: 100%;
     height: 100%;
