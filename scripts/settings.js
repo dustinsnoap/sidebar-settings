@@ -1,5 +1,6 @@
 window.onload = function () {
-    hide_sidebar();
+    // hide_sidebar();
+    show_sidebar();
     //set up listeners
     startListeners();
 }

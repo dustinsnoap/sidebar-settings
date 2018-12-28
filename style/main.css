@@ -69,10 +69,13 @@ body {
 .nav__btn > svg {
     fill: #ccc;
 }
+.sidebar {
+    display: flex;
+}
 .sidebar__summary {
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: fit-content;
     height: 100%;
     justify-content: center;
 }
@@ -98,6 +101,57 @@ body {
 .sidebar__summary > .summary__item#settings__sound {background-image: url("../img/sound.png");}
 .sidebar__summary > .summary__item#settings__input {background-image: url("../img/keys.png");}
 .sidebar__summary > .summary__item#settings__logout {background-image: url("../img/logout.png");}
+.sidebar__main {
+    width: 100%;
+    /* background-color: green; */
+}
+.sidebar__main > header {
+    font-size: 2rem;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #888;
+}
+.sidebar__section {
+    margin: 1rem 0;
+}
+.sidebar__section > .section__title {
+    display: flex;
+    align-items: center;
+    text-indent: 1rem;
+    margin-bottom: 1rem;
+}
+.sidebar__account > .section__title > figure {
+    height: 24px;
+    width: 24px;
+    background-image: url("../img/account.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.sidebar__account > .section__title > span {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+.section__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: #ccc;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+}
+.section__item:hover {
+    background-color: #666;
+}
+.section__item:nth-of-type(2) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.section__item:last-of-type {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 #main {
     width: 100%;
     height: 100%;
