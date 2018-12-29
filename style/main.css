@@ -121,17 +121,21 @@ body {
     text-indent: 1rem;
     margin-bottom: 1rem;
 }
-.sidebar__account > .section__title > figure {
-    height: 24px;
-    width: 24px;
-    background-image: url("../img/account.png");
-    background-position: left center;
-    background-repeat: no-repeat;
-}
-.sidebar__account > .section__title > span {
+.sidebar__section > .section__title > span {
     font-size: 1.5rem;
     color: #ccc;
 }
+.sidebar__section > .section__title > figure {
+    height: 24px;
+    width: 24px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.sidebar__account > .section__title > figure {background-image: url("../img/account.png");}
+.sidebar__colors > .section__title > figure {background-image: url("../img/color.png");}
+.sidebar__sound > .section__title > figure {background-image: url("../img/sound.png");}
+.sidebar__input > .section__title > figure {background-image: url("../img/keys.png");}
+.sidebar__logout > .section__title > figure {background-image: url("../img/logout.png");}
 .section__item {
     display: flex;
     justify-content: space-between;
